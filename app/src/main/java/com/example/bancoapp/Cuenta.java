@@ -50,6 +50,6 @@ public class Cuenta implements Serializable {
     public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
-    
+
 }
 
