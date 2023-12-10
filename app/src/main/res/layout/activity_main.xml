@@ -6,13 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:src="@drawable/img"
+            android:layout_marginTop="10dp"
+            ></ImageView>
+
+        <EditText
+            android:id="@+id/etNumCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:hint="Num. Cuenta"
+            android:minHeight="48dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:hint="Nombre"
+            android:minHeight="48dp"></EditText>
+
+        <EditText
+            android:id="@+id/etBanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:hint="Banco"
+            android:minHeight="48dp"></EditText>
+
+        <EditText
+            android:id="@+id/etSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:hint="Saldo"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"></EditText>
+
+        <Button
+            android:layout_marginTop="45dp"
+            android:id="@+id/btnEnviar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_gravity="center"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textSize="20dp"
+            ></Button>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnSalir"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            ></Button>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
