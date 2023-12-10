@@ -48,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
                     intentCuenta.putExtra("banco",banco);
                     intentCuenta.putExtra("saldo",saldo);
                     startActivity(intentCuenta);
+                    
+                    etNumCuenta.setText("");
+                    etNombre.setText("");
+                    etBanco.setText("");
+                    etSaldo.setText("");
                 }
 
             }
