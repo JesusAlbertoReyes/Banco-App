@@ -1,4 +1,4 @@
-package com.example.cuentadebanco;
+package com.example.bancoapp;
 
 import java.io.Serializable;
 

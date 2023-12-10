@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etNumCuenta.findViewById(R.id.etNumCuenta);
-        etNombre.findViewById(R.id.etNombre);
-        etBanco.findViewById(R.id.etBanco);
-        etSaldo.findViewById(R.id.etSaldo);
-        btnEnviar.findViewById(R.id.btnEnviar);
-        btnSalir.findViewById(R.id.btnSalir);
+        etNumCuenta=findViewById(R.id.etNumCuenta);
+        etNombre=findViewById(R.id.etNombre);
+        etBanco=findViewById(R.id.etBanco);
+        etSaldo=findViewById(R.id.etSaldo);
+        btnEnviar=findViewById(R.id.btnEnviar);
+        btnSalir=findViewById(R.id.btnSalir);
 
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String numCuenta= etNumCuenta.getText().toString();
                 String nombre= etNombre.getText().toString();
                 String banco= etBanco.getText().toString();
-                Float saldo= Float.parseFloat(etSaldo.getText().toString());
+                String saldo= etSaldo.getText().toString();
 
 
                 if (etNombre.getText().toString().isEmpty()||

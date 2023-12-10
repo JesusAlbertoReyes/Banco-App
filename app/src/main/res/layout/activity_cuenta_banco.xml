@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
     <TextView
+        android:id="@+id/tvNombreBanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre Banco"
@@ -21,6 +22,7 @@
         ></TextView>
 
         <TextView
+            android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cliente: "
@@ -30,6 +32,7 @@
             ></TextView>
 
         <TextView
+            android:id="@+id/tvSaldo"
             android:textColor="@android:color/holo_green_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +48,9 @@
             android:text="Realizar Movimientos"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:textSize="20dp"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/holo_red_dark"
             ></TextView>
 
         <TextView
@@ -54,9 +59,8 @@
             android:text="Cantidad Monetaria"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textStyle="italic|bold"
-
             ></TextView>
 
 
