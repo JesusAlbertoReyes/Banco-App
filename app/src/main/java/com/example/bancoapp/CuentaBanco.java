@@ -32,10 +32,10 @@ public class CuentaBanco extends AppCompatActivity {
         nombreBanco=findViewById(R.id.tvNombreBanco);
         nombreCliente=findViewById(R.id.tvNombre);
         tvSaldo=findViewById(R.id.tvSaldo);
-         btnRetiro=findViewById(R.id.btnRetiro);
+        btnRetiro=findViewById(R.id.btnRetiro);
         btnDeposito=findViewById(R.id.btnDeposito);
         btnRegresar=findViewById(R.id.btnRegresar);
-
+        etCantidad=findViewById(R.id.etCantidad);
 
         nombreBanco.setText(banco);
         nombreCliente.setText(nombre);
