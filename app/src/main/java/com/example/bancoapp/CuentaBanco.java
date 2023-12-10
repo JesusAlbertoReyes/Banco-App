@@ -28,6 +28,7 @@ public class CuentaBanco extends AppCompatActivity {
         String banco = getIntent().getStringExtra("banco");
         String numCuenta = getIntent().getStringExtra("numCuenta");
         String saldoString = getIntent().getStringExtra("saldo");
+        float saldo = Float.parseFloat(saldoString);
 
         nombreBanco=findViewById(R.id.tvNombreBanco);
         nombreCliente=findViewById(R.id.tvNombre);
@@ -40,6 +41,8 @@ public class CuentaBanco extends AppCompatActivity {
         nombreBanco.setText(banco);
         nombreCliente.setText(nombre);
         tvSaldo.setText("Saldo:$"+saldoString);
+
+        cuenta.setSaldo(saldo);
 
         btnDeposito.setOnClickListener(new View.OnClickListener() {
             @Override
